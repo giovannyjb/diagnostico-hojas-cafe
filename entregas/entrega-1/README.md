@@ -29,4 +29,4 @@
 ## Archivos de esta entrega
 
 - `reporte-entrega-1.pdf` — _(pendiente)_
-- `pantallazo-repo.png` — evidencia subida a Intu _(pendiente)_
+- `pantallazo-repo.png` — evidencia del repositorio para la tarea de Intu (2026-10-07)
