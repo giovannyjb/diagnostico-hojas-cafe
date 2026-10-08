@@ -1,0 +1,47 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Secretos
+.env
+*.pem
+
+# Datos e imágenes de los datasets (descargar según docs/datos.md)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.zip
+*.tar.gz
+
+# Modelos y experimentos pesados
+models/*
+!models/.gitkeep
+experiments/checkpoints/*
+!experiments/checkpoints/.gitkeep
+experiments/logs/*
+!experiments/logs/.gitkeep
+*.joblib
+*.pkl
+*.h5
+*.pt
+*.onnx
+
+# App móvil
+mobile/**/node_modules/
+mobile/**/.expo/
+mobile/**/dist/
+mobile/**/build/
+mobile/**/.dart_tool/
+mobile/**/ios/Pods/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
