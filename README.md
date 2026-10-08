@@ -82,7 +82,7 @@ diagnostico-hojas-cafe/
 ## Cómo empezar
 
 ```bash
-git clone https://github.com/<org-o-usuario>/diagnostico-hojas-cafe.git
+git clone https://github.com/giovannyjb/diagnostico-hojas-cafe.git
 cd diagnostico-hojas-cafe
 python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
