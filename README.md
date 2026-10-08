@@ -105,7 +105,8 @@ Fechas y rúbricas: Intu → *Entregables, Rúbricas*. Cada entrega se congela c
 
 ## Notebooks y entregables destacados
 
-- _(se irán enlazando aquí: EDA, características, comparación de modelos, demo del prototipo)_
+- **Análisis del problema** — árbol de problemas y árbol de objetivos: [Markdown](docs/01-arbol-de-problemas.md) · [Figma](https://www.figma.com/board/5qvbH0mT237Vze4YITAsj2/Analisis-del-problema-de-Cafe?node-id=0-1&p=f&t=fQaPk5Am9vy8Gz0O-0) · [PDF](docs/analisis-del-problema-cafe.pdf)
+- _(próximos: planteamiento, objetivos SMART, revisión de literatura, EDA, modelos, demo del prototipo)_
 
 ## Cómo trabajamos
 

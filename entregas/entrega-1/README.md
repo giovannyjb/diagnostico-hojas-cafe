@@ -5,13 +5,15 @@
 
 ## Tarea inmediata — Sesión 1 ("después de la clase")
 
-- [ ] Repositorio configurado en GitHub con la estructura del curso
-- [ ] **Pantallazo del repo + enlace** subidos a la tarea *Repositorio actualizado* en Intu
+- [x] Repositorio configurado en GitHub con la estructura del curso (plantilla del profesor adaptada)
+- [x] Problema seleccionado: reto 2, enfermedades en hojas de café (`README.md`)
+- [x] Integrantes, problema y descripción de contexto en el `README.md`
+- [ ] **Pantallazo del repo + enlace** subidos a la tarea *Repositorio actualizado* en Intu → `evidencia-sesion-01-grupo-3.pdf`
 - [ ] Enlace del repo pegado en el **Listado grupos** (Excel de SharePoint, fila del Grupo 3)
 - [ ] Comprensión del problema (lectura de los datasets y del artículo de RoCoLe)
 - [ ] Revisión de literatura → `docs/04-revision-de-literatura.md`
-- [ ] Árbol de problemas → `docs/01-arbol-de-problemas.md`
-- [ ] Objetivo general y específicos → `docs/03-objetivos.md`
+- [x] Árbol de problemas y de objetivos (v1, Figma) → `docs/01-arbol-de-problemas.md` + `docs/analisis-del-problema-cafe.pdf`
+- [ ] Objetivo general y específicos **SMART** → `docs/03-objetivos.md` (borrador listo, falta métrica/plazo)
 - [ ] Actividades a desarrollar → `docs/05-plan-de-actividades.md`
 
 ## Contenido del reporte (propuesta, ajustar a la rúbrica)
@@ -29,4 +31,5 @@
 ## Archivos de esta entrega
 
 - `reporte-entrega-1.pdf` — _(pendiente)_
-- `pantallazo-repo.png` — evidencia del repositorio para la tarea de Intu (2026-10-07)
+- `evidencia-sesion-01-grupo-3.pdf` — enlace + equipo + pantallazo del repositorio, lo que se sube a la tarea de Intu (2026-10-07)
+- `pantallazo-repo.png` — pantallazo del repositorio (2026-10-07)
