@@ -12,7 +12,7 @@
 - [ ] Enlace del repo pegado en el **Listado grupos** (Excel de SharePoint, fila del Grupo 3)
 - [ ] Comprensión del problema (lectura de los datasets y del artículo de RoCoLe)
 - [ ] Revisión de literatura → `docs/04-revision-de-literatura.md`
-- [x] Árbol de problemas y de objetivos (v1, Figma) → `docs/01-arbol-de-problemas.md` + `docs/analisis-del-problema-cafe.pdf`
+- [x] Árbol de problemas y de objetivos (v2, Figma, revisado tras retroalimentación) → `docs/01-arbol-de-problemas.md` + `docs/analisis-del-problema-cafe.pdf`
 - [ ] Objetivo general y específicos **SMART** → `docs/03-objetivos.md` (borrador listo, falta métrica/plazo)
 - [ ] Actividades a desarrollar → `docs/05-plan-de-actividades.md`
 

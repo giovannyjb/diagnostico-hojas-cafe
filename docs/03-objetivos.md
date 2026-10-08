@@ -2,7 +2,7 @@
 
 > El **objetivo general** expresa la solución global al problema central. Los **específicos** atacan causas/subcausas del árbol y deben ser **SMART**: eSpecíficos, Medibles, Alcanzables, Relevantes, con Tiempo definido. Verbo en infinitivo al inicio.
 
-Fuente: [árbol de objetivos](01-arbol-de-problemas.md#árbol-de-objetivos) (Figma). **Estado: borrador** — falta hacer SMART cada objetivo específico (métrica, alcance, fecha).
+Fuente: [árbol de objetivos](01-arbol-de-problemas.md#árbol-de-objetivos) (Figma, v2 del 2026-10-07). **Estado: borrador** — falta hacer SMART cada objetivo específico (métrica, alcance, fecha).
 
 ## Objetivo general
 
@@ -13,8 +13,8 @@ Desarrollar y evaluar un prototipo que proporcione una orientación preliminar s
 | # | Objetivo específico (medio del árbol) | Causa que ataca | Métrica / evidencia de cumplimiento | Entrega |
 |---|---------------------------------------|-----------------|--------------------------------------|---------|
 | 1 | Caracterizar la complejidad de las alteraciones visibles | Complejidad de las alteraciones visibles | _por definir_ | 2 |
-| 2 | Definir condiciones mínimas de captura y comunicar cuándo se requiere información adicional | Información limitada en una fotografía | _por definir_ | 3 |
-| 3 | Identificar y mitigar las limitaciones de representación de los datos | Representación limitada de los datos | _por definir_ | 2–3 |
+| 2 | Determinar cuándo una fotografía necesita información adicional sobre la planta | Información limitada en una fotografía | _por definir_ (p. ej. umbral de confianza y % de casos marcados como "falta información" en el conjunto de prueba) | 3 |
+| 3 | Evaluar cómo las condiciones de captura afectan la clasificación de la hoja | Variación de la apariencia según las condiciones de captura | _por definir_ (p. ej. caída de F1 macro ante cambios de iluminación/fondo/distancia) | 2–3 |
 
 ## Chequeo SMART (uno por objetivo)
 
