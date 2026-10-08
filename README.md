@@ -8,9 +8,9 @@ Proyecto del curso **Proyecto I de Innovación Tecnológica en IA** — Maestrí
 
 | Nombre | Código | Correo | GitHub |
 |--------|--------|--------|--------|
-| Dora Valencia Martínez | A00427227 | dora.valencia@gmail.com | _pendiente_ |
-| Camilo Percy Ocampo | A00022952 | camilo.percy@hotmail.com | _pendiente_ |
-| Víctor Manuel Hurtado | A00435019 | victor.hurtado@u.icesi.edu.co | _pendiente_ |
+| Dora Valencia Martínez | A00427227 | dora.valencia@gmail.com | [@dorivama](https://github.com/dorivama) |
+| Camilo Percy Ocampo | A00022952 | camilo.percy@hotmail.com | [@Ing-percy](https://github.com/Ing-percy) |
+| Víctor Manuel Hurtado | A00435019 | victor.hurtado@u.icesi.edu.co | [@VictorHurtado](https://github.com/VictorHurtado) |
 | Giovanni Jaramillo Bolaños | A00435020 | giiovaanny11@gmail.com | [@giovannyjb](https://github.com/giovannyjb) |
 
 **Profesor:** Milton Orlando Sarria Paja — [@miltonsarria](https://github.com/miltonsarria)
