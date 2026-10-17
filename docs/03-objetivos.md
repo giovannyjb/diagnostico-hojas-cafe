@@ -2,11 +2,11 @@
 
 > El **objetivo general** expresa la solución global al problema central. Los **específicos** atacan causas/subcausas del árbol y deben ser **SMART**: eSpecíficos, Medibles, Alcanzables, Relevantes, con Tiempo definido. Verbo en infinitivo al inicio.
 
-Fuente: [árbol de objetivos](01-arbol-de-problemas.md#árbol-de-objetivos) (Figma, v2 del 2026-10-07). **Estado: borrador** — falta hacer SMART cada objetivo específico (métrica, alcance, fecha).
+Fuente: [árbol de objetivos](01-arbol-de-problemas.md#árbol-de-objetivos) (Figma, v2). **General ✅ en Doc** (2026-10-17). Específicos: falta SMART.
 
 ## Objetivo general
 
-Desarrollar y evaluar un prototipo que proporcione una orientación preliminar sobre las afecciones presentadas a partir de fotografías de hojas de café.
+Desarrollar y evaluar un prototipo que proporcione una orientación preliminar sobre las posibles afectaciones de las hojas de café a partir de una fotografía.
 
 ## Objetivos específicos (borrador desde los medios del árbol)
 

@@ -11,13 +11,17 @@
 5. ¿Qué dicen sobre la generalización entre variedades, regiones, fondos e iluminación?
 6. ¿Hay prototipos móviles (apps) publicados? ¿Qué arquitectura usan (modelo en el dispositivo vs. API)?
 
+Fichas detalladas de Gio (A8 + apoyo A7): [resumenes-articulos-gio.md](resumenes-articulos-gio.md).
+
 ## Tabla de artículos
 
 | Ref. | Autores (año) | Dataset | Técnica | Resultado clave | Limitación | Útil para nosotros en… |
 |------|---------------|---------|---------|-----------------|------------|------------------------|
 | [1] | Parraga-Alava et al. (2019) — artículo de RoCoLe | RoCoLe | descripción del dataset | — | — | datos, severidad |
-| [2] | | | | | | |
-| [3] | | | | | | |
+| [2] | Baht, Dominguez & Aljumaili (2025) — A8 | JMuBEN/JMuBEN2 | CNN, transfer, CNN+SVM/RF | CNN1 ~99 % | aumento antes del split; no es BRACOL/RoCoLe | contraste metodológico; híbridos SVM/RF |
+| [3] | Chavarro, Renza & Ballesteros (2023) — A7 | BRACOL+RoCoLe+otros | transfer · >800 configs | backbone = mayor impacto (~70 % F1) | tarea solo roya (3 clases) | diseño experimental chico |
+| [4] | Sorte et al. (2019) — R1 | banco propio MG (BR) | LBP/estadísticos vs CNN AlexNet | CNN Kappa 0,97 > LBP 0,90 | test 50/clase; no BRACOL/RoCoLe | justificar textura + profundo |
+| [5] | | | | | | |
 
 ## Síntesis
 
