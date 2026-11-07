@@ -4,8 +4,8 @@
 
 Alcance previsto (Unidad 2: extracción y análisis exploratorio):
 
-- [ ] Datasets descargados, indexados (`data/processed/index.csv`) y documentados (`docs/datos.md`)
-- [ ] EDA: distribución de clases y severidad, tamaños, duplicados, ejemplos por clase (`notebooks/01-…`)
+- [ ] Datasets descargados, curados (`data/curated/<dataset>/`) e indexados (`data/featured/<dataset>/index.csv`), documentados en `docs/datos.md`
+- [ ] EDA por dataset: distribución de clases y severidad, tamaños, duplicados (`notebooks/rocole/…`, `notebooks/bracol/…`)
 - [ ] Preprocesamiento definido: redimensionado, normalización, *augmentation* (si aplica), split fijo
-- [ ] Primeras características (color/textura) y baseline (`notebooks/02-…`)
+- [ ] Primeras características (color/textura) y baseline (`notebooks/<dataset>/02-…`)
 - [ ] Reporte en plantilla Word → `reporte-entrega-2.pdf`

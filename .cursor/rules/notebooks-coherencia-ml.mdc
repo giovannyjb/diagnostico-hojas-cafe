@@ -25,7 +25,7 @@ Cada fila viaja entera: el tono y la enfermedad no se parten en tablas distintas
 
 - El corte, el escalado, el encoder y el modelo se ajustan solo con las hojas de aprender.
 - No elijas columnas ni umbrales mirando el acierto en las hojas de prueba.
-- Con fotos reales, antes del reparto busca duplicados y la misma hoja en los dos lados. El reparto queda en `data/processed/index.csv` (`docs/datos.md`).
+- Con fotos reales, antes del reparto busca duplicados y la misma hoja en los dos lados. La limpieza queda en `data/curated/<dataset>/`; el reparto, en `data/featured/<dataset>/index.csv` (`docs/datos.md`).
 - No uses la severidad para predecir la enfermedad: es consecuencia de la etiqueta, no una medida independiente.
 - Arábica y robusta no se mezclan en el mismo acierto. Entrenar en una y probar en la otra es otro paso, explícito.
 - Aumentos de imagen solo en las hojas de aprender.

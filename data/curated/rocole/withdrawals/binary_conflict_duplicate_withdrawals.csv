@@ -1,0 +1,3 @@
+group,File,Binary.Label,Multiclass.Label,reason
+55,C11P23E1.jpg,unhealthy,red_spider_mite,binary_conflict_healthy_vs_mite_hold_out
+55,C12P36E1.jpg,healthy,healthy,binary_conflict_healthy_vs_mite_hold_out

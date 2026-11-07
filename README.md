@@ -59,25 +59,27 @@ Sigue la [estructura sugerida por el curso](https://github.com/miltonsarria/ETLI
 
 ```
 diagnostico-hojas-cafe/
-├── docs/            # Árbol de problemas, planteamiento, objetivos, literatura, arquitectura, API, datos, instalación
-├── data/            # raw/ y processed/ (no versionados) — ver docs/datos.md
-├── notebooks/       # Experimentación: EDA, características, modelos (numerados)
-├── src/             # Código fuente reutilizable
-│   ├── data/        #   carga y preprocesamiento de imágenes
-│   ├── features/    #   extracción de características
-│   ├── models/      #   definición de modelos / pipelines
-│   ├── training/    #   entrenamiento
-│   ├── evaluation/  #   métricas y validación
-│   └── utils/       #   utilidades
-├── experiments/     # logs/, checkpoints/, results/ (métricas, gráficas)
-├── models/          # Artefactos exportados que consume el backend (no versionados)
-├── tests/           # Pruebas
-├── backend/         # API FastAPI que sirve el modelo
-├── mobile/          # App móvil (prototipo)
-├── entregas/        # Índice y documentos de cada entrega (1, 2, 3)
+├── docs/                 # Árbol de problemas, planteamiento, objetivos, datos, arquitectura…
+├── data/
+│   ├── raw/BRACOL|RoCoLe          # descarga Mendeley (no versionado)
+│   ├── curated/bracol|rocole      # limpio por dataset
+│   └── featured/bracol|rocole     # index.csv + features por dataset
+├── notebooks/
+│   ├── 00-prueba-estilo-cuaderno.ipynb
+│   ├── bracol/                    # EDA y experimentos BRACOL (equipo)
+│   └── rocole/                    # EDA y experimentos RoCoLe
+├── src/                  # Código reutilizable (data, features, models, …)
+├── experiments/          # logs/, checkpoints/, results/
+├── models/               # Artefactos para el backend (no versionados)
+├── tests/
+├── backend/              # API FastAPI
+├── mobile/               # App móvil
+├── entregas/             # Entregas 1, 2, 3
 ├── requirements.txt
 └── README.md
 ```
+
+RoCoLe y BRACOL se analizan en **cuadernos y carpetas separados**. Guía para el equipo BRACOL: [`notebooks/bracol/README.md`](notebooks/bracol/README.md) · detalle de datos: [`docs/datos.md`](docs/datos.md).
 
 ## Cómo empezar
 

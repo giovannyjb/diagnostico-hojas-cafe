@@ -1,6 +1,18 @@
 # Datos
 
-Los datasets **no se versionan** en git (pesan cientos de MB). Cada integrante los descarga a `data/raw/` siguiendo esta guía; `data/processed/` lo generan los scripts/notebooks.
+Los datasets **no se versionan** en git (pesan cientos de MB). Cada integrante los descarga a `data/raw/` siguiendo esta guía. Lo limpio y usable vive en `curated/`; las características e índices con split, en `featured/`.
+
+## Flujo
+
+```
+raw  →  curated  →  featured
+```
+
+- `raw/` — tal cual viene de Mendeley. No se edita.
+- `curated/` — por dataset: tablas depuradas, fotos conservadas y registros de limpieza.
+- `featured/` — por dataset: índice con `split` fijo y, después, matrices de características.
+
+RoCoLe y BRACOL se procesan **en paralelo y por separado** (carpetas hermanas). No se mezclan en el mismo acierto; entrenar en una variedad y probar en la otra es otro paso, explícito.
 
 ## Datasets
 
@@ -8,29 +20,58 @@ Los datasets **no se versionan** en git (pesan cientos de MB). Cada integrante l
 - Fuente: https://data.mendeley.com/datasets/yy2k5y8mxg/1
 - 1.747 imágenes de hojas de café **arábica**: sanas o con **minador**, **roya**, **phoma**, **cercospora**; incluye etiquetas de **severidad**.
 - Licencia: la indicada en la ficha de Mendeley Data (verificar y citar).
+- Trabajo del equipo: `notebooks/bracol/` → `data/curated/bracol/` → `data/featured/bracol/`.
 
 ### RoCoLe — Robusta Coffee Leaf
 - Fuente: https://data.mendeley.com/datasets/c5yvn32dzg/2 · artículo: https://pmc.ncbi.nlm.nih.gov/articles/PMC6727496/
-- 1.560 imágenes de hojas de café **robusta**: sanas o con **roya**, con anotaciones de severidad.
+- 1.560 imágenes de hojas de café **robusta**: sanas o con **roya** / ácaro, con anotaciones de severidad.
 - Licencia: la indicada en la ficha de Mendeley Data (verificar y citar).
+- Trabajo del equipo: `notebooks/rocole/` → `data/curated/rocole/` → `data/featured/rocole/`.
 
 ## Estructura esperada
 
 ```
 data/
 ├── raw/
-│   ├── bracol/        # contenido descomprimido tal cual viene de Mendeley
-│   └── rocole/
-└── processed/
-    ├── index.csv      # una fila por imagen: ruta, dataset, variedad, clase, severidad, split
-    └── ...
+│   ├── BRACOL/                 # descarga Mendeley (árabes)
+│   └── RoCoLe/                 # descarga Mendeley (robusta)
+├── curated/
+│   ├── bracol/                 # salidas EDA BRACOL (equipo BRACOL)
+│   │   ├── classes.csv
+│   │   ├── photos/
+│   │   └── withdrawals/
+│   └── rocole/                 # salidas EDA RoCoLe (ya en curso)
+│       ├── classes.csv
+│       ├── photos/
+│       └── withdrawals/
+└── featured/
+    ├── bracol/
+    │   └── index.csv           # split BRACOL (cuando toque)
+    └── rocole/
+        └── index.csv           # File, plant_key, link_group, etiquetas, split, photo_path
 ```
 
-Documentar aquí, al descargar, **cómo vienen las etiquetas** (carpetas, CSV, XML…) y cualquier limpieza hecha.
+```
+notebooks/
+├── 00-prueba-estilo-cuaderno.ipynb   # estilo compartido
+├── bracol/                           # cuadernos BRACOL
+│   └── README.md
+└── rocole/                           # cuadernos RoCoLe
+    ├── README.md
+    └── 01-eda-rocole.ipynb
+```
+
+### Qué quedó en la curación de RoCoLe (EDA parte 1)
+
+- Partimos de 1.560 fotos → base curada 1.481 con `plant_key` / `leaf_face`.
+- Retiros: 40 duplicados misma etiqueta; 15 conflictos de severidad (Astra); 1 par sana/ácaro; 11 pares ácaro/roya (hold-out).
+- Split en `data/featured/rocole/index.csv` por `link_group` (planta + duplicados), semilla `42`.
+
+Documentar aquí, al descargar BRACOL, **cómo vienen las etiquetas** y cualquier limpieza hecha.
 
 ## Cuidados
 
-- Antes de dividir train/test, buscar **imágenes duplicadas o de la misma hoja** para que no caigan en ambos lados.
-- Guardar el `index.csv` con el `split` fijo (semilla) para que todos los experimentos sean comparables.
+- Antes de dividir train/test, buscar **duplicados o la misma hoja/planta** para que no caigan en ambos lados.
+- Semilla fija `42`. Índice con `split` en `data/featured/<dataset>/index.csv`.
 - Registrar la **distribución de clases** por dataset (desbalance) en el EDA.
 - No subir imágenes del dataset a repos públicos fuera de lo que permita la licencia.

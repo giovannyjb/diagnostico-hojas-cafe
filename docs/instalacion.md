@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 Datos: ver [datos.md](datos.md).
 
-Notebooks: `jupyter lab` y abrir `notebooks/`. Para importar código del proyecto desde un notebook:
+Notebooks: `jupyter lab` y abrir `notebooks/rocole/` o `notebooks/bracol/` según el dataset. Para importar código del proyecto desde un notebook:
 
 ```python
 import sys; sys.path.append("..")   # raíz del repo

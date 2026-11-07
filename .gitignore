@@ -12,10 +12,47 @@ __pycache__/
 *.pem
 
 # Datos e imágenes de los datasets (descargar según docs/datos.md)
-data/raw/*
-data/processed/*
+data/raw/**
+data/curated/**
+data/featured/**
+!data/raw/
 !data/raw/.gitkeep
-!data/processed/.gitkeep
+!data/raw/README.md
+!data/curated/
+!data/curated/.gitkeep
+!data/featured/
+!data/featured/.gitkeep
+# Esqueleto por dataset (README / .gitkeep); el contenido pesado sigue ignorado
+!data/curated/bracol/
+!data/curated/bracol/.gitkeep
+!data/curated/bracol/README.md
+!data/curated/rocole/
+!data/curated/rocole/.gitkeep
+!data/curated/rocole/README.md
+!data/featured/bracol/
+!data/featured/bracol/.gitkeep
+!data/featured/bracol/README.md
+!data/featured/rocole/
+!data/featured/rocole/.gitkeep
+!data/featured/rocole/README.md
+data/curated/bracol/**
+data/curated/rocole/**
+data/featured/bracol/**
+data/featured/rocole/**
+!data/curated/bracol/.gitkeep
+!data/curated/bracol/README.md
+!data/curated/rocole/.gitkeep
+!data/curated/rocole/README.md
+!data/featured/bracol/.gitkeep
+!data/featured/bracol/README.md
+!data/featured/rocole/.gitkeep
+!data/featured/rocole/README.md
+# CSV resultantes (sin fotos ni binarios pesados)
+!data/curated/rocole/*.csv
+!data/curated/rocole/withdrawals/
+!data/curated/rocole/withdrawals/**
+!data/featured/rocole/*.csv
+!data/featured/bracol/*.csv
 *.zip
 *.tar.gz
 
@@ -26,6 +63,11 @@ experiments/checkpoints/*
 !experiments/checkpoints/.gitkeep
 experiments/logs/*
 !experiments/logs/.gitkeep
+# Imágenes generadas en resultados (mosaicos, pares, capturas)
+experiments/results/**/*.png
+experiments/results/**/*.jpg
+experiments/results/**/*.jpeg
+experiments/results/**/*.webp
 *.joblib
 *.pkl
 *.h5

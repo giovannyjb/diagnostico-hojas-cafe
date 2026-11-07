@@ -1,13 +1,29 @@
 # Notebooks
 
-Numerados por etapa; cada uno empieza con una celda de **objetivo** y termina con **conclusiones**.
+Separados **por dataset**. Estilo compartido: `00-prueba-estilo-cuaderno.ipynb` en la raíz de esta carpeta.
 
-| Notebook | Etapa | Qué responde |
-|----------|-------|--------------|
-| `01-eda-bracol-rocole.ipynb` | 2 | ¿Cuántas imágenes por clase y severidad? ¿Tamaños, fondos, iluminación? ¿Duplicados? |
-| `02-caracteristicas-color-textura.ipynb` | 2–3 | ¿Separan las clases los histogramas HSV y la textura? Baseline SVM / RF |
-| `03-embeddings-cnn-y-comparacion.ipynb` | 3 | ¿Mejora una CNN preentrenada como extractor? Comparación de modelos con CV |
-| `04-clustering-no-supervisado.ipynb` | 3 | ¿Se agrupan las enfermedades sin etiquetas? (K-Means, jerárquico, PCA) |
-| `05-generalizacion-entre-variedades.ipynb` | 3 | Entrenar en arábica → probar en robusta (y viceversa) |
+| Carpeta | Dataset | Entrada | Salida |
+|---------|---------|---------|--------|
+| [`rocole/`](rocole/) | RoCoLe (robusta) | `data/raw/RoCoLe/` | `data/curated/rocole/`, `data/featured/rocole/` |
+| [`bracol/`](bracol/) | BRACOL (arábica) | `data/raw/BRACOL/` | `data/curated/bracol/`, `data/featured/bracol/` |
 
-Convenciones: importar código desde `src/` (`sys.path.append("..")`), guardar figuras en `experiments/results/`, fijar semillas, no dejar rutas absolutas.
+## RoCoLe (en curso)
+
+| Notebook | Qué responde | Quién |
+|----------|----------------|-------|
+| [`rocole/01-eda-rocole.ipynb`](rocole/01-eda-rocole.ipynb) | EDA, limpieza, curación, split | Equipo |
+| [`rocole/02-caracteristicas-rocole.ipynb`](rocole/02-caracteristicas-rocole.ipynb) | GLCM + índices RGB | Víctor, Gio |
+| [`rocole/03-modelo-glcm-rf.ipynb`](rocole/03-modelo-glcm-rf.ipynb) | Random Forest con GLCM | Víctor |
+| [`rocole/04-modelo-rgb-logistica.ipynb`](rocole/04-modelo-rgb-logistica.ipynb) | Logística con índices RGB | Gio |
+
+## BRACOL (equipo)
+
+Empezar por [`bracol/README.md`](bracol/README.md). El primer cuaderno previsto es `bracol/01-eda-bracol.ipynb`.
+
+## Convenciones
+
+- Desde `notebooks/<dataset>/`: rutas `../../data/...` y `../../experiments/...`.
+- Importar código desde `src/` (añadir la raíz del repo al `sys.path`).
+- Figuras en `experiments/results/`.
+- Semilla `42`. Una celda, una tarea. Markdown corto.
+- No mezclar BRACOL y RoCoLe en el mismo acierto; la generalización entre variedades es otro paso.

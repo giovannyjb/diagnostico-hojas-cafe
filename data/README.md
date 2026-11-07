@@ -1,6 +1,16 @@
 # data/
 
-- `raw/` — datasets tal cual se descargan de Mendeley (BRACOL, RoCoLe). **No se versionan.**
-- `processed/` — índices y derivados generados por el código (`index.csv`, características en `.npy`/`.parquet`). **No se versionan.**
+Flujo: `raw` → `curated` → `featured`, **por dataset**.
 
-Instrucciones de descarga, licencias y estructura esperada: [`docs/datos.md`](../docs/datos.md).
+```
+data/
+├── raw/BRACOL|RoCoLe
+├── curated/bracol|rocole
+└── featured/bracol|rocole
+```
+
+- `raw/` — descarga Mendeley. **No se versiona.**
+- `curated/<dataset>/` — etiquetas, fotos y retiros. **No se versiona** (sí los `.gitkeep` / README de carpeta).
+- `featured/<dataset>/` — `index.csv` con `split` y features. **No se versiona.**
+
+Detalle: [`docs/datos.md`](../docs/datos.md).
