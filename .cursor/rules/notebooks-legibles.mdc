@@ -1,0 +1,47 @@
+---
+description: Cómo escribir notebooks para que una persona los lea de una. Aplica al crear o editar cuadernos en notebooks/.
+globs: notebooks/**/*.ipynb
+alwaysApply: false
+---
+
+# Cuadernos legibles
+
+El cuaderno lo lee el equipo. Cada sección se entiende sin ejecutarla.
+
+## Arriba, en palabras humanas
+
+Antes de cada celda de código va una celda markdown. Dice qué estamos intentando, como se lo contarías a un compañero. Sin jerga de implementación.
+
+El cuaderno abre con el objetivo de todo el archivo y cierra con conclusiones.
+
+## Una celda, una tarea
+
+Una celda de código hace una sola cosa: separar la etiqueta de los números, armar el histograma del matiz, apartar las hojas de prueba. Si la frase necesita "y", son dos celdas.
+
+## Nombres que se leen
+
+Variables en inglés, con el sustantivo de lo que son: `leaves`, `disease_name`, `hue`, `train_leaves`, `test_leaves`. Nada de `df2`, `tmp`, `X`, `data_final`.
+
+Los comentarios van en español. Las columnas que ya trae el dato (`clase`, `severidad`) se dejan como vienen.
+
+Dentro de la celda, tres bloques y en ese orden:
+
+```python
+# Entrada
+leaves = leaves.copy()
+
+# Qué hacemos
+leaf_color = leaves[["hue", "saturation", "brightness"]]
+disease_name = leaves["disease"]
+
+# Salida
+leaf_color.head()
+```
+
+La salida de una celda es la entrada de la siguiente, con el mismo nombre.
+
+## Ejemplo
+
+Markdown: "Queremos ver si el tono cambia entre una hoja sana y una con roya. Miramos solo el matiz: la parte del color que dice si tira a verde o a amarillo."
+
+Código: una figura, histograma de `hue` pintado por `disease`. En esa celda no hay modelo.
