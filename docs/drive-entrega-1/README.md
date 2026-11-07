@@ -40,4 +40,6 @@ Flujo: redactar/revisar en chat → aprobar → insertar en el Doc + espejo en `
 - Intro a medias: frases cortadas (“se encontro ue…”, “Poder detectar…”), mezcla problema técnico vs del caficultor, aún no declara el **problema central del árbol v2**
 - Falta: identificación clara del problema · objetivos · árbol (figura) · estado del arte completo · planeación/cronograma
 
-**Siguiente bloque de trabajo:** identificación clara del problema → `../02-planteamiento-del-problema.md`, luego se pasa al docx.
+**Entrega 1 enviada (2026-10-19 20:56, Intu):** reporte + árbol. El Doc nativo es la versión final (correcciones del equipo 17–19 oct). Espejo local: `../../entregas/entrega-1/reporte-entrega-1.pdf`.
+
+**Siguiente:** Entrega 2 (extracción, EDA, preprocesamiento) cuando el profe califique / abra la etapa.
