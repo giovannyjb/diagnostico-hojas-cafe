@@ -10,9 +10,11 @@ El cuaderno lo lee el equipo. Cada sección se entiende sin ejecutarla.
 
 ## Arriba, en palabras humanas
 
-Antes de cada celda de código va una celda markdown. Dice qué estamos intentando, como se lo contarías a un compañero. Sin jerga de implementación.
+Antes de cada celda de código va una celda markdown. Describe **qué estamos haciendo en el proyecto** y, si hace falta, la idea detrás. Tono de bitácora de trabajo, no de tutorial personal ni de explicación didáctica paso a paso.
 
 El cuaderno abre con el objetivo de todo el archivo y cierra con conclusiones.
+
+Evitar en el markdown bloques tipo Entrada / Qué hacemos / Salida y frases del estilo “vamos a aprender”, “como te conté”, “para que veas”.
 
 ## Una celda, una tarea
 
@@ -22,26 +24,16 @@ Una celda de código hace una sola cosa: separar la etiqueta de los números, ar
 
 Variables en inglés, con el sustantivo de lo que son: `leaves`, `disease_name`, `hue`, `train_leaves`, `test_leaves`. Nada de `df2`, `tmp`, `X`, `data_final`.
 
-Los comentarios van en español. Las columnas que ya trae el dato (`clase`, `severidad`) se dejan como vienen.
+Pocos comentarios en código, solo cuando aclaran una decisión no obvia. Sin plantilla Entrada / Qué hacemos / Salida dentro de la celda.
 
-Dentro de la celda, tres bloques y en ese orden:
+Las columnas que ya trae el dato (`clase`, `severidad`) se dejan como vienen.
 
-```python
-# Entrada
-leaves = leaves.copy()
+## Imports
 
-# Qué hacemos
-leaf_color = leaves[["hue", "saturation", "brightness"]]
-disease_name = leaves["disease"]
-
-# Salida
-leaf_color.head()
-```
-
-La salida de una celda es la entrada de la siguiente, con el mismo nombre.
+Todas las importaciones del cuaderno van en la **primera celda de código**. El resto de celdas no vuelve a importar.
 
 ## Ejemplo
 
-Markdown: "Queremos ver si el tono cambia entre una hoja sana y una con roya. Miramos solo el matiz: la parte del color que dice si tira a verde o a amarillo."
+Markdown: "Comparamos el matiz entre hojas sanas y con roya en train, para ver si el color aporta separación antes de modelar."
 
 Código: una figura, histograma de `hue` pintado por `disease`. En esa celda no hay modelo.

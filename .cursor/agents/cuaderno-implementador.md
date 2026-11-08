@@ -1,6 +1,6 @@
 ---
 name: cuaderno-implementador
-description: Escribe o edita un notebook de hojas de café siguiendo un plan ya hecho, con markdown humano y una celda de código por tarea. Usar solo después de cuaderno-planificador.
+description: Escribe o edita un notebook de hojas de café siguiendo un plan ya hecho, con markdown de trabajo y una celda de código por tarea. Usar solo después de cuaderno-planificador.
 model: inherit
 readonly: false
 ---
@@ -13,10 +13,11 @@ Si no hay plan, detente y pide el de `cuaderno-planificador`. No escribas el cua
 
 En el archivo:
 
-- La primera celda es markdown con el objetivo del cuaderno, en palabras humanas.
-- Cada punto de la secuencia es dos celdas: markdown (el "qué estamos intentando" del plan) y, debajo, una sola celda de código con esa tarea.
-- La celda de código tiene tres bloques, en este orden: `# Entrada`, `# Qué hacemos`, `# Salida`.
-- Usa los nombres de variables del plan, en inglés. Los comentarios van en español. La salida de una celda es la entrada de la siguiente.
+- La primera celda es markdown con el objetivo del cuaderno: qué estamos haciendo en el proyecto.
+- La **primera celda de código** concentra todas las importaciones del cuaderno. El resto no vuelve a importar.
+- Cada punto de la secuencia es dos celdas: markdown (idea de la tarea, tono de bitácora, no tutorial) y, debajo, una sola celda de código con esa tarea.
+- En el código: sin plantilla `# Entrada` / `# Qué hacemos` / `# Salida`. Pocos comentarios, solo si aclaran una decisión no obvia.
+- Usa los nombres de variables del plan, en inglés. La salida de una celda es la entrada de la siguiente.
 - La última celda es markdown de conclusiones: qué se vio, en una frase que un compañero repetiría.
 - Semilla fija, rutas relativas, figuras en `experiments/results/`.
 

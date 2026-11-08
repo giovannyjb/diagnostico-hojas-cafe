@@ -24,13 +24,13 @@ Devuelve un plan con esta forma:
 
 ```markdown
 ## Objetivo del cuaderno
-Una frase humana.
+Una frase: qué estamos haciendo en el proyecto.
 
 ## Secuencia
-1. Markdown: qué estamos intentando.
+1. Markdown: idea de la tarea (bitácora, no tutorial).
    Tarea: un verbo, una cosa.
-   Entrada: nombre de variable que ya existe, o "ninguna".
-   Salida: nombre de variable, en inglés, que queda para la celda siguiente.
+   Usa: nombre de variable que ya existe, o "ninguna".
+   Produce: nombre de variable, en inglés, que queda para la celda siguiente.
    No hacer: el paso que sería otra celda, o un leakage concreto.
 
 ## Riesgos
@@ -43,7 +43,7 @@ Si el plan mezcla dos tareas en un punto, se parte antes de implementar.
 
 Delega en `cuaderno-implementador` y pásale el plan completo.
 
-Escribe el objetivo arriba, una celda markdown por tarea, una celda de código debajo, y conclusiones al final. Variables en inglés, comentarios en español. No agrega pasos que el plan no tenga.
+Escribe el objetivo arriba, imports en la primera celda de código, una celda markdown por tarea, una celda de código debajo (sin plantilla Entrada/Qué hacemos/Salida), y conclusiones al final. Variables en inglés. No agrega pasos que el plan no tenga.
 
 ## 3. Revisor
 

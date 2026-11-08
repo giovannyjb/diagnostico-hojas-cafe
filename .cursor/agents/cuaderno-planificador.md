@@ -14,18 +14,20 @@ El plan lo va a leer una persona del equipo y después otro agente lo va a ejecu
 Devuelve solo esto:
 
 ## Objetivo del cuaderno
-Una frase, como se lo contarías a un compañero.
+Una frase: qué estamos haciendo en el proyecto.
 
 ## Secuencia
 Para cada paso:
 
-1. Markdown: qué estamos intentando, en palabras humanas.
+1. Markdown: idea de la tarea (bitácora de trabajo, no tutorial personal).
    Tarea: un solo verbo y una sola cosa.
-   Entrada: la variable que ya existe, o "ninguna".
-   Salida: el nombre que la celda siguiente va a usar.
+   Usa: variable(s) que ya existen, o "ninguna".
+   Produce: el nombre que la celda siguiente va a usar.
    No hacer: qué quedaría fuera de esta celda.
 
-Variables en inglés y concretas: `leaves`, `disease_name`, `hue`, `train_leaves`, `test_leaves`. Comentarios del código en español. Nada de `df`, `X`, `tmp`.
+Variables en inglés y concretas: `leaves`, `disease_name`, `hue`, `train_leaves`, `test_leaves`. Nada de `df`, `X`, `tmp`.
+
+El plan puede nombrar Usa/Produce para encadenar celdas; eso **no** se vuelca al notebook como bloques Entrada/Salida.
 
 ## Riesgos
 Dónde este análisis se saltaría un paso o se colaría información de prueba (corte calculado con todo, la misma hoja en los dos lados, severidad usada como si fuera color, arábica y robusta mezcladas).
