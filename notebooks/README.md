@@ -12,9 +12,10 @@ Separados **por dataset**. Estilo compartido: `00-prueba-estilo-cuaderno.ipynb` 
 | Notebook | Qué responde | Quién |
 |----------|----------------|-------|
 | [`rocole/01-eda-rocole.ipynb`](rocole/01-eda-rocole.ipynb) | EDA, limpieza, curación, split | Equipo |
-| [`rocole/02-caracteristicas-rocole.ipynb`](rocole/02-caracteristicas-rocole.ipynb) | GLCM + índices RGB | Víctor, Gio |
-| [`rocole/03-modelo-glcm-rf.ipynb`](rocole/03-modelo-glcm-rf.ipynb) | Random Forest con GLCM | Víctor |
-| [`rocole/04-modelo-rgb-logistica.ipynb`](rocole/04-modelo-rgb-logistica.ipynb) | Logística con índices RGB | Gio |
+| [`rocole/02-caracteristicas-rocole.ipynb`](rocole/02-caracteristicas-rocole.ipynb) | GLCM + índices RGB; inventario | Víctor, Gio |
+| [`rocole/03-eda-rocole-featured-exploration.ipynb`](rocole/03-eda-rocole-featured-exploration.ipynb) | Explorar featured; decisión VARI | Víctor, Gio |
+| [`rocole/04-modelo-glcm-rf.ipynb`](rocole/04-modelo-glcm-rf.ipynb) | Random Forest con GLCM | Víctor |
+| [`rocole/05-modelo-rgb-logistica.ipynb`](rocole/05-modelo-rgb-logistica.ipynb) | Logística con índices RGB | Gio |
 
 ## BRACOL (equipo)
 

@@ -3,6 +3,7 @@ numpy>=1.26
 pandas>=2.2
 scikit-learn>=1.5
 scikit-image>=0.24
+pycocotools>=2.0.8
 pillow>=10
 opencv-python-headless>=4.10
 matplotlib>=3.9

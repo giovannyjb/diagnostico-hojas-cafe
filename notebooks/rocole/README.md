@@ -5,10 +5,10 @@ Cuadernos del conjunto **RoCoLe** (robusta). Datos: `data/raw/RoCoLe/` → `data
 | Notebook | Qué hace | Quién |
 |----------|----------|-------|
 | `01-eda-rocole.ipynb` | EDA, limpieza, curación, `plant_key`, split train/val/test | Equipo |
-| `02-caracteristicas-rocole.ipynb` | GLCM + índices RGB desde el índice; guarda `glcm_features.csv` y `rgb_features.csv` | Víctor, Gio |
-| `03-modelo-glcm-rf.ipynb` | Random Forest con GLCM (train → val → test) | Víctor |
-| `04-modelo-rgb-logistica.ipynb` | Regresión logística con índices RGB (train → val → test) | Gio |
+| `02-caracteristicas-rocole.ipynb` | GLCM + índices RGB; piloto máscara vs full; inventario sin máscara → `rgb_glcm_features.csv` | Víctor, Gio |
+| `03-eda-rocole-featured-exploration.ipynb` | Revisar inventario featured: finitos, percentiles, extremos VARI; decisión sobre `vari_*` | Víctor, Gio |
+| `04-baseline-logistica-rf.ipynb` | Baseline: mayoría, logística y Random Forest con 7 medidas (sin VARI); hiperparámetros en val, test una vez | Víctor, Gio |
 
-Orden: correr **01** (ya curado), luego **02** (genera features), después **03** y **04** en paralelo.
+Orden: **01 → 02 → 03** (decidir features) → **04** (baseline).
 
 Rutas desde aquí: `../../data/...`, `../../experiments/...`. Semilla `42`.
