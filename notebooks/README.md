@@ -7,15 +7,17 @@ Separados **por dataset**. Estilo compartido: `00-prueba-estilo-cuaderno.ipynb` 
 | [`rocole/`](rocole/) | RoCoLe (robusta) | `data/raw/RoCoLe/` | `data/curated/rocole/`, `data/featured/rocole/` |
 | [`bracol/`](bracol/) | BRACOL (arábica) | `data/raw/BRACOL/` | `data/curated/bracol/`, `data/featured/bracol/` |
 
-## RoCoLe (en curso)
+## RoCoLe (pipelines en rama `experiment/rocole-mask-hsv-pipelines`)
 
-| Notebook | Qué responde | Quién |
-|----------|----------------|-------|
-| [`rocole/01-eda-rocole.ipynb`](rocole/01-eda-rocole.ipynb) | EDA, limpieza, curación, split | Equipo |
-| [`rocole/02-caracteristicas-rocole.ipynb`](rocole/02-caracteristicas-rocole.ipynb) | GLCM + índices RGB; inventario | Víctor, Gio |
-| [`rocole/03-eda-rocole-featured-exploration.ipynb`](rocole/03-eda-rocole-featured-exploration.ipynb) | Explorar featured; decisión VARI | Víctor, Gio |
-| [`rocole/04-modelo-glcm-rf.ipynb`](rocole/04-modelo-glcm-rf.ipynb) | Random Forest con GLCM | Víctor |
-| [`rocole/05-modelo-rgb-logistica.ipynb`](rocole/05-modelo-rgb-logistica.ipynb) | Logística con índices RGB | Gio |
+Detalle y mapa canónico vs experimento: [`rocole/README.md`](rocole/README.md).
+
+| Pipeline | Cadena | Idea |
+|----------|--------|------|
+| A producción | `01` → `02` → `03` → `04` | Foto completa, 7 features sin VARI |
+| B máscara | `02-masked` → `03-masked` → `04-masked` → `05` | Mismas hojas, medición COCO Leaf |
+| C HSV (dev) | `02-hsv-masked` → `03-hsv-masked` → `04-hsv-masked` | 7 + histograma HSV pequeño; pausa antes de más familias |
+
+Evaluación común en todos los baselines: train / val elige / test una vez; mayoría + logística + RF; seed `42`.
 
 ## BRACOL (equipo)
 
@@ -25,6 +27,6 @@ Empezar por [`bracol/README.md`](bracol/README.md). El primer cuaderno previsto 
 
 - Desde `notebooks/<dataset>/`: rutas `../../data/...` y `../../experiments/...`.
 - Importar código desde `src/` (añadir la raíz del repo al `sys.path`).
-- Figuras en `experiments/results/`.
+- Figuras y CSV de métricas en `experiments/results/`.
 - Semilla `42`. Una celda, una tarea. Markdown corto.
 - No mezclar BRACOL y RoCoLe en el mismo acierto; la generalización entre variedades es otro paso.

@@ -1,0 +1,4 @@
+modelo,f1_macro_val
+mayoria,0.3413897280966767
+logistica,0.7155005472762481
+random_forest,0.7431192660550459
