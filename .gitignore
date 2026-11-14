@@ -18,6 +18,14 @@ data/featured/**
 !data/raw/
 !data/raw/.gitkeep
 !data/raw/README.md
+# Tablas de origen (sin fotos ni el tar VOC, que pasa de 100 MB)
+!data/raw/BRACOL/
+!data/raw/BRACOL/*.csv
+!data/raw/RoCoLe/
+!data/raw/RoCoLe/Annotations/
+!data/raw/RoCoLe/Annotations/*.csv
+!data/raw/RoCoLe/Annotations/*.json
+!data/raw/RoCoLe/Annotations/*.xlsx
 !data/curated/
 !data/curated/.gitkeep
 !data/featured/
@@ -81,6 +89,10 @@ mobile/**/dist/
 mobile/**/build/
 mobile/**/.dart_tool/
 mobile/**/ios/Pods/
+
+# Figuras sueltas del estudio: van dentro del PDF y de los cuadernos
+docs/estudio/_preview/
+docs/estudio/figuras/*.png
 
 # Sistema / editores
 .DS_Store

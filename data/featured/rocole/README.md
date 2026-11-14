@@ -9,6 +9,6 @@ Protocolo sin máscara: foto completa, GLCM 32 niveles, distancia 1, ángulo 0. 
 
 Nota: VARI puede dispararse si \(G+R-B \approx 0\); en los baselines se excluyen `vari_*`.
 
-Pipelines de cuadernos (A foto completa / B máscara / C HSV): ver `notebooks/rocole/README.md`. Métricas comparables en `experiments/results/rocole_baselines_test_metrics_extended.csv`.
+Pipelines de cuadernos (A foto completa / B máscara / C HSV): ver `notebooks/rocole/README.md` y subcarpetas `A-full/`, `B-masked/`, `C-hsv-masked/`. Métricas comparables en `experiments/results/rocole/comparacion/rocole_baselines_test_metrics_extended.csv`.
 
 No se versionan los CSV pesados por defecto (ver `.gitignore`); las excepciones `*.csv` de esta carpeta sí se pueden versionar. Sí este README.

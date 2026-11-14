@@ -1,6 +1,10 @@
 # Datos
 
-Los datasets **no se versionan** en git (pesan cientos de MB). Cada integrante los descarga a `data/raw/` siguiendo esta guía. Lo limpio y usable vive en `curated/`; las características e índices con split, en `featured/`.
+Las **fotos no se versionan** (pesan más de 1 GB y ya se ven dentro de los cuadernos). Cada integrante las descarga a `data/raw/` siguiendo esta guía. En git sí van las tablas de las tres capas, para leer el flujo sin abrir las imágenes:
+
+- `raw/` — CSV y anotaciones de origen. Fuera del repo: fotos y `RoCoLe-voc.tar.gz`.
+- `curated/` — CSV depurados y registros de limpieza. La carpeta `photos/` queda en local.
+- `featured/` — índice con `split` y matrices de características.
 
 ## Flujo
 
@@ -53,12 +57,14 @@ data/
 
 ```
 notebooks/
-├── 00-prueba-estilo-cuaderno.ipynb   # estilo compartido
 ├── bracol/                           # cuadernos BRACOL
 │   └── README.md
 └── rocole/                           # cuadernos RoCoLe
     ├── README.md
-    └── 01-eda-rocole.ipynb
+    ├── 01-eda-rocole.ipynb           # EDA, curación y split
+    ├── A-full/                       # foto completa
+    ├── B-masked/                     # máscara COCO
+    └── C-hsv-masked/                 # HSV sobre máscara
 ```
 
 ### Qué quedó en la curación de RoCoLe (EDA parte 1)

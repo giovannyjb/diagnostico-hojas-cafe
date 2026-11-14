@@ -25,8 +25,9 @@ Empezar por [`bracol/README.md`](bracol/README.md). El primer cuaderno previsto 
 
 ## Convenciones
 
-- Desde `notebooks/<dataset>/`: rutas `../../data/...` y `../../experiments/...`.
+- Desde `notebooks/rocole/` (p. ej. `01`): rutas `../../data/...` y `../../experiments/...`.
+- Desde `notebooks/rocole/A-full|B-masked|C-hsv-masked/`: un nivel más → `../../../data/...` y `../../../experiments/...`.
+- Resultados RoCoLe por pipeline: `experiments/results/rocole/{A-full,B-masked,C-hsv-masked,comparacion}/`.
 - Importar código desde `src/` (añadir la raíz del repo al `sys.path`).
-- Figuras y CSV de métricas en `experiments/results/`.
 - Semilla `42`. Una celda, una tarea. Markdown corto.
 - No mezclar BRACOL y RoCoLe en el mismo acierto; la generalización entre variedades es otro paso.

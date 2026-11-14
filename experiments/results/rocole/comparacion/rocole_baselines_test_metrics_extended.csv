@@ -1,0 +1,10 @@
+protocolo,modelo,n_test,accuracy,recall_macro,f1_macro,kappa,recall_healthy,recall_unhealthy,f1_healthy,f1_unhealthy
+full_sin_mascara,mayoria,226,0.5088,0.5,0.3372,0.0,1.0,0.0,0.6745,0.0
+full_sin_mascara,logistica,226,0.5619,0.5625,0.5617,0.1249,0.5304,0.5946,0.552,0.5714
+full_sin_mascara,random_forest,226,0.5398,0.5411,0.5381,0.0819,0.4696,0.6126,0.5094,0.5667
+masked_rgb_glcm,mayoria,226,0.5088,0.5,0.3372,0.0,1.0,0.0,0.6745,0.0
+masked_rgb_glcm,logistica,226,0.6062,0.6063,0.6062,0.2125,0.6,0.6126,0.6079,0.6044
+masked_rgb_glcm,random_forest,226,0.677,0.677,0.6769,0.3539,0.6783,0.6757,0.6812,0.6726
+masked_rgb_glcm_hsv,mayoria,226,0.5088,0.5,0.3372,0.0,1.0,0.0,0.6745,0.0
+masked_rgb_glcm_hsv,logistica,226,0.677,0.6767,0.6767,0.3535,0.6957,0.6577,0.6867,0.6667
+masked_rgb_glcm_hsv,random_forest,226,0.7434,0.7423,0.7421,0.4856,0.8,0.6847,0.7603,0.7238
