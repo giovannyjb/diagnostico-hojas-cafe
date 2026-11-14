@@ -1,11 +1,24 @@
 # Entrega 2 — Reporte de la segunda etapa (10%)
 
-**Fecha límite:** ver Intu → *Entregables, Rúbricas* → Entrega 2.
+**Estado:** **ENVIADA** a Intu · sáb 14 nov 2026, 10:34 · **13 h 24 min** antes del cierre · sin calificar aún.
 
-Alcance previsto (Unidad 2: extracción y análisis exploratorio):
+**Tarea Intu:** [Entrega 2](https://www.icesi.edu.co/moodle/mod/assign/view.php?id=701784)  
+**Repo:** https://github.com/giovannyjb/diagnostico-hojas-cafe  
+**Doc:** https://docs.google.com/document/d/1inZAxDUJzbVdK-Bo82IAM6WkcD9xOHqMFsn0BqIl0m0/edit
 
-- [ ] Datasets descargados, curados (`data/curated/<dataset>/`) e indexados (`data/featured/<dataset>/index.csv`), documentados en `docs/datos.md`
-- [ ] EDA por dataset: distribución de clases y severidad, tamaños, duplicados (`notebooks/rocole/…`, `notebooks/bracol/…`)
-- [ ] Preprocesamiento definido: redimensionado, normalización, *augmentation* (si aplica), split fijo
-- [ ] Primeras características (color/textura) y baseline (`notebooks/<dataset>/02-…`)
-- [ ] Reporte en plantilla Word → `reporte-entrega-2.pdf`
+## Archivos en Intu
+
+- `Clasificación de alteraciones visibles en hojas de café mediante aprendizaje automático v2.pdf`
+- Comentario de entrega (Gio, 10:36): enlace al repo + resumen de curación/EDA/baselines A–B–C
+
+## Copia local
+
+- `reporte-entrega-2.pdf` (local; `*.pdf` gitignored — no va a GitHub)
+
+## Checklist
+
+- [x] RoCoLe curado e indexado; documentado en Doc y `docs/datos.md`
+- [x] EDA (duplicados, correlaciones, medianas, figuras)
+- [x] Split fijo por `link_group`; VARI excluido; máscaras COCO
+- [x] Características + baselines mayoría / logística / RF (A–B–C)
+- [x] PDF subido a Intu + comentario con link del repo
