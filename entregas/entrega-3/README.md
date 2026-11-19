@@ -1,15 +1,25 @@
-# Entrega 3 — Reporte final, sustentación y coevaluación (70%)
+# Entrega 3 — Informe final (55 %) + video 10 min + oral
 
-**Fecha límite:** ver Intu → *Entregables, Rúbricas* → Entrega 3. Desglose del 70% en `Porcentajes de Evaluación.pdf`.
+**Estado:** pendiente · checklist técnico desde la retro de Entrega 2  
+**Peso (correo Sarria 2026-10-31):** informe final **55 %** (el 70 % viejo quedó partido en AWS 15 % + final 55 %)
 
-Alcance previsto (Unidades 3 y 4):
+## Checklist Milton (Entrega 2 → final)
 
-- [ ] Comparación de modelos (SVM, ensambles, con/sin embeddings) con validación cruzada; selección justificada
-- [ ] Evaluación: métricas por clase, matriz de confusión, generalización arábica ↔ robusta
-- [ ] Exploración no supervisada (clustering, PCA)
-- [ ] Modelo exportado y servido en el backend (`/predict`)
-- [ ] App móvil funcionando contra el backend (demo en vivo o video)
-- [ ] Discusión: limitaciones, sesgos, ética, acciones de mejora
-- [ ] Reporte final en plantilla Word → `reporte-final.pdf`
-- [ ] Presentación de la sustentación → `presentacion.pdf`
-- [ ] Coevaluación de pares (según indique el profesor)
+Archivo vivo: [`recomendaciones-entrega-2-milton.md`](recomendaciones-entrega-2-milton.md)
+
+Resumen:
+
+1. Informe centrado en resultados (sin rellenar con Entrega 1)
+2. EDA imagen: severidad, lesión, luz, calidad de máscaras
+3. CV por grupos de planta + intervalos de confianza
+4. Más modelos + HPO
+5. Sensibilidad por clase original y roya nivel 1
+6. Análisis sistemático de falsos negativos
+
+## Alcance previsto (cuando toque)
+
+- [ ] Comparación de modelos con CV por planta; selección justificada
+- [ ] Métricas por clase / FN sistemáticos
+- [ ] Discusión: limitaciones, sesgos, ética, mejoras
+- [ ] Informe final + video ≤10 min + oral
+- [ ] Coevaluación (si Intu la pide)

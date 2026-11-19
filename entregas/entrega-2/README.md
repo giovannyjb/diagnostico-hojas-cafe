@@ -1,6 +1,7 @@
 # Entrega 2 — Reporte de la segunda etapa (10%)
 
-**Estado:** **ENVIADA** a Intu · sáb 14 nov 2026, 10:34 · **13 h 24 min** antes del cierre · sin calificar aún.
+**Estado:** **CALIFICADA** · **4,50 / 5,00** · mié 18 nov 2026, 19:25 · Milton Sarria  
+**Envío:** sáb 14 nov 2026, 10:34 · 13 h 24 min antes del cierre
 
 **Tarea Intu:** [Entrega 2](https://www.icesi.edu.co/moodle/mod/assign/view.php?id=701784)  
 **Repo:** https://github.com/giovannyjb/diagnostico-hojas-cafe  
@@ -13,7 +14,7 @@
 
 ## Copia local
 
-- `reporte-entrega-2.pdf` (local; `*.pdf` gitignored — no va a GitHub)
+- `reporte-entrega-2.pdf` (local; no subir a GitHub — pesa ~1,2 MB y ya está en Intu)
 
 ## Checklist
 
@@ -22,3 +23,9 @@
 - [x] Split fijo por `link_group`; VARI excluido; máscaras COCO
 - [x] Características + baselines mayoría / logística / RF (A–B–C)
 - [x] PDF subido a Intu + comentario con link del repo
+- [x] Nota 4,50 + retroalimentación Milton
+
+## Siguiente
+
+Checklist del final con las recomendaciones del profe:  
+[`../entrega-3/recomendaciones-entrega-2-milton.md`](../entrega-3/recomendaciones-entrega-2-milton.md)
