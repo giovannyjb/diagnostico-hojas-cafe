@@ -56,7 +56,27 @@ Carpeta: [`C-hsv-masked/`](C-hsv-masked/)
 
 Resultados: `experiments/results/rocole/C-hsv-masked/`
 
-**Pausa:** no abrir más familias hasta decidir selección de variables en val.
+### D — CV por planta y errores (sobre protocolo C)
+
+Carpeta: [`D-cv-errores/`](D-cv-errores/)
+
+Profundización del protocolo C (23 features) sin reabrir A/B/C ni el holdout histórico de test para elegir ganador.
+
+`D-cv-errores/05` → `06` → `07`
+
+| Notebook | Rol |
+|----------|-----|
+| `05-cv-grupos-modelos-c.ipynb` | GroupKFold por `link_group`; logística / RF / SVM / HistGB; `f1_macro` + IC 95% |
+| `06-sensibilidad-multiclass-c.ipynb` | Sensibilidad OOF por `Multiclass.Label` (foco `rust_level_1`) |
+| `07-analisis-falsos-negativos-c.ipynb` | FN OOF: severidad, proxy de lesión HSV, iluminación, cobertura Leaf |
+
+Resultados: `experiments/results/rocole/D-cv-errores/`
+
+**CV por planta (D-05, media ± IC 95% `f1_macro`):** RF **0.796** [0.778, 0.814] · HistGB 0.780 [0.745, 0.815] · SVM 0.767 [0.719, 0.816] · logística 0.741 [0.725, 0.757]. Ganador por CV: **random_forest**.
+
+**Sensibilidad OOF unhealthy (D-06, ganador):** `rust_level_1` **0.67** (109 FN / 333) · `rust_level_2` 0.84 · ácaro 0.91 · niveles 3–4 ≥ 0.98.
+
+**FN (D-07):** 149 unhealthy→healthy; se concentran en roya leve y menor masa de matiz no verde; iluminación y cobertura de máscara casi no separan FN de TP.
 
 ---
 
@@ -79,5 +99,5 @@ Resultados: `experiments/results/rocole/C-hsv-masked/`
 | B máscara 7 cols | ~0.61 / ~0.21 | ~0.68 / ~0.35 |
 | C máscara 7+HSV | ~0.68 / ~0.35 | ~0.74 / ~0.49 |
 
-Rutas desde subcarpetas A/B/C: `../../../data/...`, `../../../experiments/...`.
+Rutas desde subcarpetas A/B/C/D: `../../../data/...`, `../../../experiments/...`.
 Desde esta raíz (`01`): `../../data/...`.
