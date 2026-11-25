@@ -56,27 +56,24 @@ Carpeta: [`C-hsv-masked/`](C-hsv-masked/)
 
 Resultados: `experiments/results/rocole/C-hsv-masked/`
 
-### D — CV por planta y errores (sobre protocolo C)
+### D — Entrenamiento/validación y revisión multiclass (sobre protocolo C)
 
 Carpeta: [`D-cv-errores/`](D-cv-errores/)
 
 Profundización del protocolo C (23 features) sin reabrir A/B/C ni el holdout histórico de test para elegir ganador.
 
-`D-cv-errores/05` → `06` → `07`
+`D-cv-errores/05` → `06`
 
 | Notebook | Rol |
 |----------|-----|
-| `05-cv-grupos-modelos-c.ipynb` | GroupKFold por `link_group`; logística / RF / SVM / HistGB; `f1_macro` + IC 95% |
-| `06-sensibilidad-multiclass-c.ipynb` | Sensibilidad OOF por `Multiclass.Label` (foco `rust_level_1`) |
-| `07-analisis-falsos-negativos-c.ipynb` | FN OOF: severidad, proxy de lesión HSV, iluminación, cobertura Leaf |
+| `05-cv-grupos-modelos-c.ipynb` | Entrenamiento y validación: GroupKFold por `link_group`; logística / RF / SVM; `f1_macro` + IC 95% |
+| `06-sensibilidad-multiclass-c.ipynb` | Revisión multiclass / FN: sensibilidad OOF por `Multiclass.Label` (foco `rust_level_1`) |
 
 Resultados: `experiments/results/rocole/D-cv-errores/`
 
-**CV por planta (D-05, media ± IC 95% `f1_macro`):** RF **0.796** [0.778, 0.814] · HistGB 0.780 [0.745, 0.815] · SVM 0.767 [0.719, 0.816] · logística 0.741 [0.725, 0.757]. Ganador por CV: **random_forest**.
+**CV por planta (D-05, media ± IC 95% `f1_macro`):** RF **0.796** [0.778, 0.814] · SVM 0.767 [0.719, 0.816] · logística 0.741 [0.725, 0.757]. Ganador por CV: **random_forest**.
 
-**Sensibilidad OOF unhealthy (D-06, ganador):** `rust_level_1` **0.67** (109 FN / 333) · `rust_level_2` 0.84 · ácaro 0.91 · niveles 3–4 ≥ 0.98.
-
-**FN (D-07):** 149 unhealthy→healthy; se concentran en roya leve y menor masa de matiz no verde; iluminación y cobertura de máscara casi no separan FN de TP.
+**Sensibilidad OOF unhealthy (D-06, ganador):** `rust_level_1` **0.67** (109 FN / 333) · `rust_level_2` 0.84 · ácaro 0.91 · niveles 3–4 ≥ 0.98. FN totales OOF: 149, casi todos en roya leve (hipótesis: poca señal de color/textura).
 
 ---
 
