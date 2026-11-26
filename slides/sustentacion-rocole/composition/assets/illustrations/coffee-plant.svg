@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <ellipse cx="100" cy="220" rx="48" ry="10" fill="#176B52" opacity=".12"/>
+  <path d="M100 210 V78" stroke="#202824" stroke-width="4" stroke-linecap="round"/>
+  <!-- opposite leaves -->
+  <path d="M100 100 C58 86 38 108 42 128 C48 148 78 150 100 132" fill="#176B52"/>
+  <path d="M100 100 C142 86 162 108 158 128 C152 148 122 150 100 132" fill="#31A99A"/>
+  <path d="M100 140 C56 128 34 152 40 172 C48 192 78 192 100 172" fill="#31A99A"/>
+  <path d="M100 140 C144 128 166 152 160 172 C152 192 122 192 100 172" fill="#176B52"/>
+  <path d="M100 70 C70 54 52 70 56 90 C62 108 84 112 100 96" fill="#176B52"/>
+  <path d="M100 70 C130 54 148 70 144 90 C138 108 116 112 100 96" fill="#31A99A"/>
+  <!-- cherries -->
+  <circle cx="72" cy="118" r="7" fill="#C65732"/>
+  <circle cx="84" cy="126" r="6" fill="#E9B949"/>
+  <circle cx="128" cy="158" r="7" fill="#C65732"/>
+  <circle cx="118" cy="166" r="5.5" fill="#E9B949"/>
+</svg>

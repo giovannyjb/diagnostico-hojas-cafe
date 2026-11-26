@@ -1,0 +1,13 @@
+{
+  "name": "sustentacion-rocole",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "present": "npx --yes hyperframes@0.9.96 present ./composition",
+    "dev": "npx --yes hyperframes@0.9.96 present ./composition",
+    "studio": "npx --yes hyperframes@0.9.96 preview ./composition",
+    "check": "npx --yes hyperframes@0.9.96 check ./composition",
+    "lint": "npx --yes hyperframes@0.9.96 lint ./composition",
+    "build:deck": "python _build_deck.py"
+  }
+}
