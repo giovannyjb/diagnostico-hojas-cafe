@@ -104,3 +104,4 @@ Thumbs.db
 slides/**/.hyperframes/
 **/node_modules/
 
+slides/**/.thumbnails/
