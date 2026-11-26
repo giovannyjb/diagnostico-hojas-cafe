@@ -99,3 +99,8 @@ docs/estudio/figuras/*.png
 Thumbs.db
 .vscode/
 .idea/
+
+# HyperFrames (artefactos locales)
+slides/**/.hyperframes/
+**/node_modules/
+

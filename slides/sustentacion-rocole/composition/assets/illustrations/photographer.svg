@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260" fill="none">
+  <!-- body -->
+  <ellipse cx="110" cy="248" rx="42" ry="8" fill="#202824" opacity=".08"/>
+  <path d="M78 150 H142 L150 230 H70 Z" fill="#176B52"/>
+  <path d="M88 150 H132 V176 H88 Z" fill="#31A99A"/>
+  <!-- head -->
+  <circle cx="110" cy="98" r="36" fill="#F2D2B6"/>
+  <circle cx="98" cy="96" r="3.5" fill="#202824"/>
+  <circle cx="122" cy="96" r="3.5" fill="#202824"/>
+  <path d="M98 112 Q110 120 122 112" stroke="#202824" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- hair -->
+  <path d="M78 88 C82 58 138 52 142 90 C128 72 92 74 78 88Z" fill="#202824"/>
+  <!-- arms holding camera -->
+  <path d="M78 160 C48 168 40 190 58 198" stroke="#F2D2B6" stroke-width="12" stroke-linecap="round"/>
+  <path d="M142 160 C172 168 186 186 168 200" stroke="#F2D2B6" stroke-width="12" stroke-linecap="round"/>
+  <!-- camera -->
+  <rect x="68" y="186" width="84" height="48" rx="10" fill="#202824"/>
+  <circle cx="110" cy="210" r="16" fill="#31A99A"/>
+  <circle cx="110" cy="210" r="8" fill="#FAF9F5"/>
+  <rect x="132" y="194" width="14" height="10" rx="3" fill="#E9B949"/>
+</svg>

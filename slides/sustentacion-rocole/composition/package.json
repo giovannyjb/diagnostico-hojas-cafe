@@ -1,0 +1,10 @@
+{
+  "name": "sustentacion-rocole-composition",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "present": "npx --yes hyperframes@0.9.96 present .",
+    "check": "npx --yes hyperframes@0.9.96 check .",
+    "lint": "npx --yes hyperframes@0.9.96 lint ."
+  }
+}
